@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Animations"
         tools:targetApi="31">
         <activity
+            android:name=".ValueAnimation"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Lottie"
             android:exported="false">
             <meta-data

@@ -26,5 +26,10 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, Lottie::class.java)
             startActivity(intent)
         }
+
+        binding.valueAnimationBtn.setOnClickListener {
+            intent = Intent(this, ValueAnimation::class.java)
+            startActivity(intent)
+        }
     }
 }

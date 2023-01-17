@@ -5,4 +5,5 @@
     <string name="xml">xml</string>
     <string name="code">code</string>
     <string name="lottie">Lottie</string>
+    <string name="value_animation">value animation</string>
 </resources>

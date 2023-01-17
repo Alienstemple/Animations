@@ -24,4 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lottie" />
+
+    <Button
+        android:id="@+id/value_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/value_animation" />
 </LinearLayout>
