@@ -2,4 +2,7 @@
     <string name="app_name">Animations</string>
     <string name="frame_by_frame">Frame by frame</string>
     <string name="view_from_xml">View from xml</string>
+    <string name="xml">xml</string>
+    <string name="code">code</string>
+    <string name="lottie">Lottie</string>
 </resources>

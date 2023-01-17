@@ -21,5 +21,10 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, ViewAnimationXml::class.java)
             startActivity(intent)
         }
+
+        binding.lottieBtn.setOnClickListener {
+            intent = Intent(this, Lottie::class.java)
+            startActivity(intent)
+        }
     }
 }

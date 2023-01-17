@@ -4,24 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-
-    <Button
-        android:id="@+id/frame_by_frame_btn"
+    android:orientation="vertical"
+    tools:context=".Lottie">
+   <!-- <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/frame_by_frame" />
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="countdown.json"/>-->
 
-    <Button
-        android:id="@+id/view_from_xml"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_anim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/view_from_xml" />
+        app:lottie_rawRes="@raw/countdown"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
 
-    <Button
-        android:id="@+id/lottie_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lottie" />
 </LinearLayout>
