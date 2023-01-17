@@ -16,5 +16,10 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, FrameByFrame::class.java)
             startActivity(intent)
         }
+
+        binding.viewFromXml.setOnClickListener {
+            intent = Intent(this, ViewAnimationXml::class.java)
+            startActivity(intent)
+        }
     }
 }
