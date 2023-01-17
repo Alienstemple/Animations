@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Animations</string>
+    <string name="frame_by_frame">Frame by frame</string>
 </resources>
