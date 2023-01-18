@@ -36,4 +36,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/view_property_animation" />
+    <Button
+        android:id="@+id/scene_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_animation" />
 </LinearLayout>

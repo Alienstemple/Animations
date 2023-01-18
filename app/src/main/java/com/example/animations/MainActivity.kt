@@ -36,5 +36,10 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, ViewPropertyAnimation::class.java)
             startActivity(intent)
         }
+
+        binding.sceneAnimationBtn.setOnClickListener {
+            intent = Intent(this, SceneAnimation::class.java)
+            startActivity(intent)
+        }
     }
 }
