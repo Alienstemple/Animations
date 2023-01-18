@@ -41,4 +41,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/scene_animation" />
+    <Button
+        android:id="@+id/shared_transition_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shared_transition_animation" />
+
+    <ImageView
+        android:id="@+id/horse_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/horse0" />
 </LinearLayout>

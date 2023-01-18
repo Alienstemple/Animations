@@ -3,6 +3,7 @@ package com.example.animations
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.app.ActivityOptionsCompat
 import com.example.animations.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -40,6 +41,14 @@ class MainActivity : AppCompatActivity() {
         binding.sceneAnimationBtn.setOnClickListener {
             intent = Intent(this, SceneAnimation::class.java)
             startActivity(intent)
+        }
+
+        binding.sharedTransitionAnimationBtn.setOnClickListener {
+            intent = Intent(this, SharedTransitionActivity::class.java)
+            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,
+                binding.horseImg,
+                "share_horse")
+            startActivity(intent, options.toBundle())
         }
     }
 }
