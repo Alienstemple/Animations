@@ -31,5 +31,10 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, ValueAnimation::class.java)
             startActivity(intent)
         }
+
+        binding.viewPropertyAnimationBtn.setOnClickListener {
+            intent = Intent(this, ViewPropertyAnimation::class.java)
+            startActivity(intent)
+        }
     }
 }

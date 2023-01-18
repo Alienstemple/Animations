@@ -8,4 +8,5 @@
     <string name="value_animation">value animation</string>
     <string name="value_animation_text">Value animation</string>
     <string name="prop_value">combine with property value holder</string>
+    <string name="view_property_animation">view property animation</string>
 </resources>
