@@ -6,4 +6,6 @@
     <string name="code">code</string>
     <string name="lottie">Lottie</string>
     <string name="value_animation">value animation</string>
+    <string name="value_animation_text">Value animation</string>
+    <string name="prop_value">combine with property value holder</string>
 </resources>
