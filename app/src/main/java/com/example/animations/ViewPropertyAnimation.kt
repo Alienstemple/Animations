@@ -15,14 +15,17 @@ class ViewPropertyAnimation : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityViewPropertyAnimationBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val exampleTextView = binding.tvHello
-        exampleTextView.animate()
-            .alpha(0.6f)
-            .translationY(200F)
-            .translationXBy(10F)
-            .scaleX(1.5f)
-            .setDuration(250)
-            .setInterpolator(FastOutLinearInInterpolator())
-            .start()
+        val exampleTextView: View = binding.tvHello
+
+        binding.animateBtn.setOnClickListener {
+            exampleTextView.animate()
+                .alpha(0.6f)
+                .translationY(200F)
+                .translationXBy(10F)
+                .scaleX(1.5f)
+                .setDuration(250)
+                .setInterpolator(FastOutLinearInInterpolator())
+                .start()
+        }
     }
 }
