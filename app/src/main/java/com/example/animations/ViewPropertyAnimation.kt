@@ -11,7 +11,7 @@ class ViewPropertyAnimation : AppCompatActivity() {
 
     lateinit var binding: ActivityViewPropertyAnimationBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {  // TODO check if working
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityViewPropertyAnimationBinding.inflate(layoutInflater)
         setContentView(binding.root)

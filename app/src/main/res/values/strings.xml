@@ -11,4 +11,5 @@
     <string name="view_property_animation">view property animation</string>
     <string name="scene_animation">Scene animation</string>
     <string name="shared_transition_animation">shared transition animation</string>
+    <string name="activity_opening_custom_animation">Activity opening custom animation</string>
 </resources>

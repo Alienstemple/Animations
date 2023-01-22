@@ -1,5 +1,6 @@
 package com.example.animations
 
+import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -49,6 +50,12 @@ class MainActivity : AppCompatActivity() {
                 binding.horseImg,
                 "share_horse")
             startActivity(intent, options.toBundle())
+        }
+
+        binding.activityOpeningBtn.setOnClickListener {
+            val options = ActivityOptions.makeScaleUpAnimation(it, 0, 0, it.width, it.height)
+            startActivity(Intent(this, ActivityOpeningAnimation::class.java), options.toBundle())
+
         }
     }
 }
