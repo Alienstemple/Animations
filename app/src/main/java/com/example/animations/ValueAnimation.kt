@@ -3,13 +3,11 @@ package com.example.animations
 import android.animation.AnimatorInflater
 import android.animation.PropertyValuesHolder
 import android.animation.ValueAnimator
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnticipateOvershootInterpolator
 import android.widget.ImageView
-import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.appcompat.app.AppCompatActivity
 import com.example.animations.databinding.ActivityValueAnimationBinding
-import com.example.animations.databinding.ActivityViewAnimationXmlBinding
 
 class ValueAnimation : AppCompatActivity() {
     lateinit var binding: ActivityValueAnimationBinding

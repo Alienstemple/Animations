@@ -49,8 +49,8 @@
 
     <ImageView
         android:id="@+id/horse_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/image_size_small"
+        android:layout_height="@dimen/image_size_small"
         android:transitionName="share_horse"
         app:srcCompat="@drawable/horse0" />
     <Button

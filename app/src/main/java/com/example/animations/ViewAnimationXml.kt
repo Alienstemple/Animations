@@ -1,11 +1,8 @@
 package com.example.animations
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.*
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.graphics.scaleMatrix
-import com.example.animations.databinding.ActivityFrameByFrameBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.example.animations.databinding.ActivityViewAnimationXmlBinding
 
 class ViewAnimationXml : AppCompatActivity() {
@@ -17,9 +14,10 @@ class ViewAnimationXml : AppCompatActivity() {
 
         with(binding) {
             xmlBtn.setOnClickListener {
-                AnimationUtils.loadAnimation(this@ViewAnimationXml, R.anim.icon_view_animation).also { hyperspaceJumpAnimation ->
-                    imageView2.startAnimation(hyperspaceJumpAnimation)
-                }
+                AnimationUtils.loadAnimation(this@ViewAnimationXml, R.anim.icon_view_animation)
+                    .also { hyperspaceJumpAnimation ->
+                        imageView2.startAnimation(hyperspaceJumpAnimation)
+                    }
             }
 
             codeBtn.setOnClickListener {

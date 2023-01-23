@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "onStart() called")
     }
 
-    companion object{
+    companion object {
         private const val TAG = "ActivLC"
     }
 }

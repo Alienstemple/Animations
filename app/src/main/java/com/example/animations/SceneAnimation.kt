@@ -1,18 +1,17 @@
 package com.example.animations
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Scene
 import android.transition.Transition
 import android.transition.TransitionInflater
 import android.transition.TransitionManager
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.example.animations.databinding.ActivitySceneAnimationBinding
-import com.example.animations.databinding.ActivityViewPropertyAnimationBinding
 
 class SceneAnimation : AppCompatActivity() {
     lateinit var binding: ActivitySceneAnimationBinding
-    private var transitionMgr: Transition?=null
+    private var transitionMgr: Transition? = null
     private var scene1: Scene? = null
     private var scene2: Scene? = null
 

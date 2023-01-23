@@ -1,12 +1,10 @@
 package com.example.animations
 
-import android.graphics.drawable.AnimatedImageDrawable
 import android.graphics.drawable.AnimationDrawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.example.animations.databinding.ActivityFrameByFrameBinding
-import kotlin.math.log
 
 class FrameByFrame : AppCompatActivity() {
 
@@ -19,10 +17,9 @@ class FrameByFrame : AppCompatActivity() {
         frameBinding = ActivityFrameByFrameBinding.inflate(layoutInflater)
         setContentView(frameBinding.root)
         frameBinding.imageView
-        val frameAnimation = frameBinding.imageView.drawable as AnimationDrawable?  // FIXME null
+        val frameAnimation = frameBinding.imageView.drawable as AnimationDrawable?
         Log.d("FBF", "onCreate() ${frameAnimation.toString()}")
         frameAnimation?.start()
-        // TODO add button,  isRunning
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
@@ -55,7 +52,7 @@ class FrameByFrame : AppCompatActivity() {
         Log.d(TAG, "onStop() called")
     }
 
-    companion object{
+    companion object {
         private const val TAG = "ActivLC-2"
     }
 }

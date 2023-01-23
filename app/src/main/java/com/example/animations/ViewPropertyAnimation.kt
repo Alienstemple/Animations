@@ -1,10 +1,9 @@
 package com.example.animations
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
-import com.example.animations.databinding.ActivityViewAnimationXmlBinding
 import com.example.animations.databinding.ActivityViewPropertyAnimationBinding
 
 class ViewPropertyAnimation : AppCompatActivity() {
