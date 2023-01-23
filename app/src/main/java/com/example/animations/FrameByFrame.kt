@@ -14,6 +14,8 @@ class FrameByFrame : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate() called with: savedInstanceState = $savedInstanceState")
+
         frameBinding = ActivityFrameByFrameBinding.inflate(layoutInflater)
         setContentView(frameBinding.root)
         frameBinding.imageView
@@ -23,13 +25,37 @@ class FrameByFrame : AppCompatActivity() {
         // TODO add button,  isRunning
     }
 
-    override fun onStart() {
-        super.onStart()
-//        frameAnimation.start()
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Log.d(TAG, "onRestoreInstanceState() called with: savedInstanceState = $savedInstanceState")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart() called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume() called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause() called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy() called")
     }
 
     override fun onStop() {
         super.onStop()
-//        frameAnimation.stop()
+        Log.d(TAG, "onStop() called")
+    }
+
+    companion object{
+        private const val TAG = "ActivLC-2"
     }
 }
