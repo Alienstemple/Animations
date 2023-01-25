@@ -9,6 +9,7 @@ import com.example.animations.databinding.ActivityFrameByFrameBinding
 class FrameByFrame : AppCompatActivity() {
 
     lateinit var frameBinding: ActivityFrameByFrameBinding
+    private var frameAnimation: AnimationDrawable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,9 +18,20 @@ class FrameByFrame : AppCompatActivity() {
         frameBinding = ActivityFrameByFrameBinding.inflate(layoutInflater)
         setContentView(frameBinding.root)
         frameBinding.imageView
-        val frameAnimation = frameBinding.imageView.drawable as AnimationDrawable?
+        frameAnimation = frameBinding.imageView.drawable as AnimationDrawable?
         Log.d("FBF", "onCreate() ${frameAnimation.toString()}")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart() called")
         frameAnimation?.start()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop() called")
+        frameAnimation?.stop()
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
@@ -45,11 +57,6 @@ class FrameByFrame : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG, "onDestroy() called")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, "onStop() called")
     }
 
     companion object {
