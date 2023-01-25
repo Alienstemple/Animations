@@ -11,7 +11,10 @@ class ViewAnimationXml : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityViewAnimationXmlBinding.inflate(layoutInflater)
         setContentView(binding.root)
+    }
 
+    override fun onStart() {
+        super.onStart()
         with(binding) {
             xmlBtn.setOnClickListener {
                 AnimationUtils.loadAnimation(this@ViewAnimationXml, R.anim.icon_view_animation)
@@ -24,6 +27,11 @@ class ViewAnimationXml : AppCompatActivity() {
                 animateProgrammatically()
             }
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        binding.imageView2.clearAnimation()
     }
 
     private fun animateProgrammatically() {
