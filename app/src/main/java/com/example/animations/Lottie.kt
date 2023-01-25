@@ -11,7 +11,15 @@ class Lottie : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         lottieBinding = ActivityLottieBinding.inflate(layoutInflater)
         setContentView(lottieBinding.root)
+    }
 
+    override fun onStart() {
+        super.onStart()
         lottieBinding.lottieAnim.playAnimation()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        lottieBinding.lottieAnim.cancelAnimation()
     }
 }
